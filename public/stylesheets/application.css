@@ -102,25 +102,15 @@ label {
   text-align: center;
 }
 
-#time {
-  font-size: 80%;	
-}
-
 #right {
   text-align: right;
 }
 
-.commentaire {
-  border: 1px solid black;
-  width: 45em;
-  padding: 1em;
+#left_column {
+  width:25em;
+  float:left;
+}
+#right_column {
+  margin-left:30em;
 }
 
-.exposition, .bebe {
-  border-left:10px solid #eee;
-  padding-left:10px;
-}
-.exposition {
-  border-color:#999;
-  margin:2em 0;
-}

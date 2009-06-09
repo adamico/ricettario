@@ -4406,3 +4406,869 @@ ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" wit
   /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:39:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.3ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (23.2ms)
+Completed in 35ms (View: 25, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-09 11:39:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:40:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.3ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.2ms)
+  [4;36;1mCategoria Load (1.2ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (66.6ms)
+Completed in 78ms (View: 70, DB: 2) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:40:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (26.3ms)
+Completed in 42ms (View: 31, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:41:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.3ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (79.9ms)
+Completed in 96ms (View: 85, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:41:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (25.8ms)
+Completed in 41ms (View: 30, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:44:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (76.0ms)
+Completed in 91ms (View: 80, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:45:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.2ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.1ms)
+  [4;35;1mCategoria Load (0.4ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (16.1ms)
+Completed in 27ms (View: 19, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:46:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.6ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (25.2ms)
+Completed in 40ms (View: 30, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:46:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.7ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (26.4ms)
+Completed in 42ms (View: 31, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:47:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (24.5ms)
+Completed in 37ms (View: 26, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:47:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.7ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (24.5ms)
+Completed in 38ms (View: 26, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:47:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.7ms)
+  [4;36;1mCategoria Load (0.6ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (25.2ms)
+Completed in 40ms (View: 29, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#index (for 127.0.0.1 at 2009-06-09 11:50:17) [GET]
+  [4;35;1mRicetta Load (0.9ms)[0m   [0mSELECT * FROM "ricette" [0m
+Rendering template within layouts/application
+Rendering ricette/index
+Completed in 19ms (View: 7, DB: 1) | 200 OK [http://127.0.0.1/ricette]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:50:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (24.2ms)
+Completed in 37ms (View: 26, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:50:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (24.3ms)
+Completed in 37ms (View: 26, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:51:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.3ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (78.1ms)
+Completed in 93ms (View: 83, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:51:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (23.7ms)
+Completed in 37ms (View: 25, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:52:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.2ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.1ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.0ms)
+  [4;36;1mCategoria Load (0.4ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (15.8ms)
+Completed in 24ms (View: 17, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:52:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.2ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.1ms)
+  [4;35;1mCategoria Load (0.5ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (16.4ms)
+Completed in 25ms (View: 17, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:54:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.6ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (22.9ms)
+Completed in 35ms (View: 24, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:54:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.3ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;35;1mCategoria Load (0.8ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (80.4ms)
+Completed in 94ms (View: 82, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:56:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (23.8ms)
+Completed in 37ms (View: 25, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:56:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.7ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (28.7ms)
+Completed in 43ms (View: 31, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:56:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.3ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.6ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (22.6ms)
+Completed in 35ms (View: 24, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:56:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.8ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (26.1ms)
+Completed in 40ms (View: 28, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:57:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.6ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (25.3ms)
+Completed in 41ms (View: 30, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:57:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.2ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.3ms)
+  [4;35;1mCategoria Load (0.5ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (59.0ms)
+Completed in 68ms (View: 60, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:57:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (28.3ms)
+Completed in 44ms (View: 33, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:57:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (24.2ms)
+Completed in 37ms (View: 26, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:59:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.5ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (77.6ms)
+Completed in 91ms (View: 79, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 11:59:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.7ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (24.1ms)
+Completed in 37ms (View: 26, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:00:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.6ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (22.9ms)
+Completed in 36ms (View: 24, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:01:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.2ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.2ms)
+  [4;35;1mCategoria Load (0.5ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (17.1ms)
+Completed in 26ms (View: 18, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:01:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (24.1ms)
+Completed in 37ms (View: 26, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:02:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (22.8ms)
+Completed in 35ms (View: 24, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:02:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.7ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (25.6ms)
+Completed in 40ms (View: 27, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:03:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;35;1mCategoria Load (0.6ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (22.8ms)
+Completed in 35ms (View: 24, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:03:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.7ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (24.7ms)
+Completed in 39ms (View: 27, DB: 2) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:04:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.2ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.2ms)
+  [4;35;1mCategoria Load (0.4ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (20.8ms)
+Completed in 49ms (View: 24, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:04:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.6ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.7ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (25.8ms)
+Completed in 39ms (View: 27, DB: 2) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:04:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.5ms)
+  [4;35;1mCategoria Load (0.6ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (22.5ms)
+Completed in 35ms (View: 24, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:05:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.8ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (25.6ms)
+Completed in 40ms (View: 27, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:07:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;35;1mCategoria Load (0.6ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (25.0ms)
+Completed in 40ms (View: 29, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:07:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.5ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (78.6ms)
+Completed in 92ms (View: 80, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:07:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.7ms)
+  [4;35;1mCategoria Load (0.6ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (25.5ms)
+Completed in 41ms (View: 30, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:07:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.3ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (24.9ms)
+Completed in 40ms (View: 29, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:07:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.9ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (25.8ms)
+Completed in 40ms (View: 27, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:08:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (25.3ms)
+Completed in 42ms (View: 30, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:08:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (25.0ms)
+Completed in 41ms (View: 29, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:09:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.3ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.7ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (25.8ms)
+Completed in 41ms (View: 27, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:09:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (23.5ms)
+Completed in 37ms (View: 25, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:09:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (81.9ms)
+Completed in 96ms (View: 84, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:10:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.2ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.1ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.1ms)
+  [4;35;1mCategoria Load (0.4ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (17.0ms)
+Completed in 28ms (View: 20, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:10:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.6ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (23.4ms)
+Completed in 36ms (View: 25, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:10:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (24.8ms)
+Completed in 40ms (View: 29, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:10:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.3ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.8ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (26.3ms)
+Completed in 39ms (View: 28, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:11:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (25.0ms)
+Completed in 43ms (View: 29, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:11:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.8ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (26.6ms)
+Completed in 94ms (View: 28, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:11:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (25.5ms)
+Completed in 43ms (View: 32, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:11:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.6ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (23.2ms)
+Completed in 36ms (View: 25, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:12:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.5ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.7ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (80.2ms)
+Completed in 97ms (View: 85, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:12:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.5ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (25.0ms)
+Completed in 39ms (View: 27, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:13:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.2ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.1ms)
+  [4;35;1mCategoria Load (0.4ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (16.6ms)
+Completed in 27ms (View: 19, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:13:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.5ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (0.2ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (26.7ms)
+Completed in 44ms (View: 31, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:13:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mRicetta Load (0.3ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (0.2ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 1 ) [0m
+Rendered ricette/_ingrediente (1.6ms)
+  [4;35;1mCategoria Load (0.6ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_form (25.0ms)
+Completed in 40ms (View: 29, DB: 1) | 200 OK [http://127.0.0.1/ricette/1/edit]
+
+
+Processing RicetteController#show (for 127.0.0.1 at 2009-06-09 12:13:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering ricette/show
+Completed in 16ms (View: 5, DB: 0) | 200 OK [http://127.0.0.1/ricette/1]
+
+
+Processing RicetteController#index (for 127.0.0.1 at 2009-06-09 12:14:32) [GET]
+  [4;35;1mRicetta Load (0.9ms)[0m   [0mSELECT * FROM "ricette" [0m
+Rendering template within layouts/application
+Rendering ricette/index
+Completed in 16ms (View: 7, DB: 1) | 200 OK [http://127.0.0.1/ricette]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:14:33) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRicetta Load (0.4ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;35;1mIngrediente Load (1.5ms)[0m   [0mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 2 ) [0m
+Rendered ricette/_ingrediente (1.7ms)
+  [4;36;1mCategoria Load (0.7ms)[0m   [0;1mSELECT * FROM "categorie" [0m
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_form (37.6ms)
+Completed in 51ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/ricette/2/edit]
+
+
+Processing RicetteController#edit (for 127.0.0.1 at 2009-06-09 12:15:16) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mRicetta Load (0.4ms)[0m   [0mSELECT * FROM "ricette" WHERE ("ricette"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering ricette/edit
+  [4;36;1mIngrediente Load (1.5ms)[0m   [0;1mSELECT * FROM "ingredienti" INNER JOIN "ingredienti_ricette" ON "ingredienti".id = "ingredienti_ricette".ingrediente_id WHERE ("ingredienti_ricette".ricetta_id = 2 ) [0m
+Rendered ricette/_ingrediente (2.4ms)
+  [4;35;1mCategoria Load (0.7ms)[0m   [0mSELECT * FROM "categorie" [0m
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_ingrediente (0.7ms)
+Rendered ricette/_form (40.0ms)
+Completed in 52ms (View: 40, DB: 3) | 200 OK [http://127.0.0.1/ricette/2/edit]
+
+
+Processing RicetteController#show (for 127.0.0.1 at 2009-06-09 12:16:07) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mRicetta Load (0.2ms)[0m   [0;1mSELECT * FROM "ricette" WHERE ("ricette"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering ricette/show
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/ricette/2]
+
+
+Processing RicetteController#index (for 127.0.0.1 at 2009-06-09 12:16:12) [GET]
+  [4;35;1mRicetta Load (0.6ms)[0m   [0mSELECT * FROM "ricette" [0m
+Rendering template within layouts/application
+Rendering ricette/index
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://127.0.0.1/ricette]

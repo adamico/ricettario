@@ -10,26 +10,30 @@
   <p>
     <%= ricetta_form.label :titolo %>
     <%= ricetta_form.text_field :titolo %> &nbsp; 
+  </p>
+  <p>
     <%= ricetta_form.label :fonte %>
-    <%= ricetta_form.text_field :fonte, :size => 60 %>
+    <%= ricetta_form.text_field :fonte, :size => 90 %>
   </p>
   <p>
     <%= ricetta_form.label :categoria_id, "Categoria" %>
     <%= ricetta_form.collection_select(:categoria_id, Categoria.all, :id, :nome) %>
   </p>
-  <h4>Ingredienti</h4>
-  <div id="ingredienti">
-    <% ricetta_form.fields_for :ingredienti do |ingr_form| %>
-      <%= render :partial => 'ingrediente', :locals => { :f => ingr_form} %>
-    <% end %>
+  <div id="left_column">
+    <strong>Ingredienti</strong>
+    <div id="ingredienti">
+      <% ricetta_form.fields_for :ingredienti do |ingr_form| %>
+        <%= render :partial => 'ingrediente', :locals => { :f => ingr_form} %>
+      <% end %>
+    </div>
+    <p>
+      <%= link_to 'Aggiungi ingrediente', '#ingrediente', :class => "add_nested_item", :rel => "ingredienti" %>
+    </p>
   </div>
-  <p>
-    <%= link_to 'Aggiungi ingrediente', '#ingrediente', :class => "add_nested_item", :rel => "ingredienti" %>
-  </p>
-  <p>
-    <%= ricetta_form.label :istruzioni %><br />
-    <%= ricetta_form.text_area :istruzioni %>
-  </p>
+  <div id="right_column">
+    <strong>Istruzioni</strong>
+    <p><%= ricetta_form.text_area :istruzioni, :cols => 53 %></p>
+  </div>
    
   
   <p>
