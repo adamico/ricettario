@@ -1,0 +1,8 @@
+<% title "Modifica della ricetta" %>
+
+<%= render :partial => 'form' %>
+ 
+<p>
+  <%= link_to 'Annullare le modifiche', @ricetta, :confirm => 'Vuoi annullare le modifiche?' %> |
+  <%= link_to "Ritorna alla lista", ricette_path %>
+</p>

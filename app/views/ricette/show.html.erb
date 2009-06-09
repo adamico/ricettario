@@ -1,0 +1,18 @@
+<% title h(@ricetta.titolo) %>
+
+<p>
+  <%= link_to "Modifica", edit_ricetta_path %>
+</p>
+
+<div class="istruzioni">
+  <%= @ricetta.istruzioni %>
+</div>
+
+<p>
+  Presa da: <%= link_to h(@ricetta.fonte), @ricetta.fonte.to_s, :target => "_blank" %>
+</p>
+
+<p>
+  <%= link_to "Elimina questa ricetta", @ricetta, :confirm => 'Sei sicuro?', :method => :delete%> |
+  <%= link_to "Ritorna alla lista", ricette_path %>
+</p>

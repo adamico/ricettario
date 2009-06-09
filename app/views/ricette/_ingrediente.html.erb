@@ -1,0 +1,9 @@
+<div class="ingrediente">
+    <%= f.text_field :nome %>
+    
+    <% unless f.object.new_record? %>
+      <!-- For existing records we add a checkbox to be able to delete records. -->
+      <%= f.label :_delete, "Remove:" %>
+      <%= f.check_box :_delete %>
+    <% end %>
+</div>

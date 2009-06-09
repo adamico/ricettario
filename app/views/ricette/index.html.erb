@@ -1,0 +1,14 @@
+<% title "Ricette" %>
+
+<table>
+  <% @ricette.each do |ricetta| %>
+    <tr>
+      <td><%= link_to h(ricetta.titolo), ricetta %></td>
+      <td><%= link_to "Modifica", edit_ricetta_path(ricetta) %></td>
+      <td><%= link_to "Elimina", ricetta, :confirm => 'Sei sicuro?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+<p>
+  <%= link_to "Nuova ricetta", new_ricetta_path %>
+</p>

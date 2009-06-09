@@ -1,0 +1,38 @@
+<% javascript :defaults, 'delegate' %>
+ 
+<%= error_messages_for :ricetta %>
+ 
+<% form_for @ricetta do |ricetta_form| -%>
+
+  <% content_for :jstemplates do -%>
+    <%= "var ingrediente='#{generate_template(ricetta_form, :ingredienti)}'" %>
+  <% end -%>
+  <p>
+    <%= ricetta_form.label :titolo %>
+    <%= ricetta_form.text_field :titolo %> &nbsp; 
+    <%= ricetta_form.label :fonte %>
+    <%= ricetta_form.text_field :fonte, :size => 60 %>
+  </p>
+  <p>
+    <%= ricetta_form.label :categoria_id, "Categoria" %>
+    <%= ricetta_form.collection_select(:categoria_id, Categoria.all, :id, :nome) %>
+  </p>
+  <h4>Ingredienti</h4>
+  <div id="ingredienti">
+    <% ricetta_form.fields_for :ingredienti do |ingr_form| %>
+      <%= render :partial => 'ingrediente', :locals => { :f => ingr_form} %>
+    <% end %>
+  </div>
+  <p>
+    <%= link_to 'Aggiungi ingrediente', '#ingrediente', :class => "add_nested_item", :rel => "ingredienti" %>
+  </p>
+  <p>
+    <%= ricetta_form.label :istruzioni %><br />
+    <%= ricetta_form.text_area :istruzioni %>
+  </p>
+   
+  
+  <p>
+    <%= ricetta_form.submit "Salva" %>
+  </p>
+<% end -%>
